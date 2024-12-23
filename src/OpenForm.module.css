@@ -1,0 +1,96 @@
+.open-form {
+  position: absolute;
+  top: 66px;
+  left: 85px;
+
+  width: 443px;
+  height: 518px;
+
+  border-radius: 15px;
+
+  border: 1px solid #220536;
+
+  padding: 28px 26px 50px 34px;
+
+  background-color: #e2e2ff61;
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow: 0 0 14px rgba(219, 219, 238, 0.09);
+}
+
+.title {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  pointer-events: none;
+}
+
+.content-container {
+  margin: 41px 0px 0px 21px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  pointer-events: none;
+}
+
+.text {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 13px;
+  right: 17px;
+
+  border: none;
+  outline: none;
+
+  padding: 3px 12px;
+  border-radius: 3px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  color: #871414;
+
+  pointer-events: auto;
+
+  cursor: pointer;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  background-color: transparent;
+}
+
+.close-button:hover {
+  background-color: #cab8d99c;
+}
+
+.close-button:active {
+  background-color: #aa8eba9e;
+}
