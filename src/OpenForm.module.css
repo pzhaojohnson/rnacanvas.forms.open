@@ -3,14 +3,14 @@
   top: 66px;
   left: 85px;
 
-  width: 443px;
-  height: 518px;
+  width: 448px;
+  height: 521px;
 
-  border-radius: 15px;
+  border-radius: 14px;
 
   border: 1px solid #220536;
 
-  padding: 28px 26px 50px 34px;
+  padding: 28px 27px 50px 34px;
 
   background-color: #e2e2ff61;
 
@@ -37,7 +37,7 @@
 }
 
 .content-container {
-  margin: 41px 0px 0px 21px;
+  margin: 41px 0px 0px 22px;
 
   display: flex;
   flex-direction: column;

@@ -104,13 +104,13 @@ function ErrorMessagesLocation() {
 }
 
 function HowToOpenConsole() {
-  let keyBinding = BoldSpan(detectMacOS() ? '⌥ ⌘ I' : 'Ctrl+Shift+I');
+  let keyBinding = BoldSpan(detectMacOS() ? 'Option+Command+I' : 'Ctrl+Shift+I');
 
   let Console = BoldSpan('Console');
 
   let domNode = P('The web browser console can be opened by pressing ', keyBinding, ' and switching to the ', Console, ' tab.');
 
-  domNode.style.margin = '18px 0px 0px 26px';
+  domNode.style.margin = '18px 0px 0px 25px';
 
   return domNode;
 }
@@ -118,7 +118,7 @@ function HowToOpenConsole() {
 function HowToSave() {
   let Save = BoldSpan('Save');
 
-  let domNode = P('Drawings can be saved to file using the ', Save, ' button in the top-left of the app.');
+  let domNode = P('Drawings can be saved to file using the ', Save, ' button in towards the top-left corner of the app.');
 
   domNode.style.marginTop = '49px';
 
