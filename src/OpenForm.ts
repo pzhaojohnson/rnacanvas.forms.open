@@ -118,7 +118,7 @@ function HowToOpenConsole() {
 function HowToSave() {
   let Save = BoldSpan('Save');
 
-  let domNode = P('Drawings can be saved to file using the ', Save, ' button in towards the top-left corner of the app.');
+  let domNode = P('Drawings can be saved to file using the ', Save, ' button towards the top-left corner of the app.');
 
   domNode.style.marginTop = '49px';
 
