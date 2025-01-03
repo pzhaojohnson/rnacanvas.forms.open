@@ -98,7 +98,7 @@ function HowToOpen() {
 function ErrorMessagesLocation() {
   let domNode = P('Any error messages (e.g., for invalid drawing files) will appear in the web browser console.');
 
-  domNode.style.marginTop = '47px';
+  domNode.style.marginTop = '46px';
 
   return domNode;
 }
@@ -110,7 +110,7 @@ function HowToOpenConsole() {
 
   let domNode = P('The web browser console can be opened by pressing ', keyBinding, ' and switching to the ', Console, ' tab.');
 
-  domNode.style.margin = '18px 0px 0px 25px';
+  domNode.style.margin = '18px 0px 0px 26px';
 
   return domNode;
 }
@@ -120,7 +120,7 @@ function HowToSave() {
 
   let domNode = P('Drawings can be saved using the ', Save, ' button towards the top-left corner of the app.');
 
-  domNode.style.marginTop = '49px';
+  domNode.style.marginTop = '50px';
 
   return domNode;
 }

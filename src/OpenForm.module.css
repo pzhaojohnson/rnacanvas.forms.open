@@ -1,18 +1,18 @@
 .open-form {
   position: absolute;
-  top: 66px;
-  left: 85px;
+  top: 68px;
+  left: 86px;
 
-  width: 448px;
-  height: 521px;
+  width: 386px;
+  height: 441px;
 
-  border-radius: 14px;
+  border-radius: 12px;
 
   border: 1px solid #220536;
 
-  padding: 28px 27px 50px 34px;
+  padding: 28px 32px 50px 32px;
 
-  background-color: #e2e2ff61;
+  background-color: #d6d6ff4a;
 
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -25,7 +25,7 @@
   padding: 0px;
 
   font-family: "Open Sans", sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   font-style: normal;
   color: black;
@@ -37,7 +37,7 @@
 }
 
 .content-container {
-  margin: 41px 0px 0px 22px;
+  margin: 37px 0px 0px 22px;
 
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@
   padding: 0px;
 
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   font-style: normal;
   color: black;
