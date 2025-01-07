@@ -1,6 +1,6 @@
 {
   "name": "@rnacanvas/forms.open",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "The Open form",
   "repository": {
     "type": "git",
@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "@rnacanvas/forms": "^2.1.0",
-    "@rnacanvas/utilities": "^4.1.0"
+    "@rnacanvas/utilities": "^5.0.0"
   }
 }

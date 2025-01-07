@@ -126,7 +126,7 @@ function HowToSave() {
 }
 
 function CloseButton() {
-  let domNode = document.createElement('button');
+  let domNode = document.createElement('p');
 
   domNode.classList.add(styles['close-button']);
 
