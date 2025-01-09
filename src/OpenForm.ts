@@ -108,7 +108,7 @@ function HowToOpenConsole() {
 
   let Console = BoldSpan('Console');
 
-  let domNode = P('The web browser console can be opened by pressing ', keyBinding, ' and switching to the ', Console, ' tab.');
+  let domNode = P('The web browser console can be opened by pressing ', keyBinding, ' and selecting the ', Console, ' tab.');
 
   domNode.style.margin = '20px 0px 0px 27px';
 
