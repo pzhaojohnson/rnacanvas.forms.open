@@ -118,7 +118,9 @@ function HowToOpenConsole() {
 function HowToSave() {
   let Save = BoldSpan('Save');
 
-  let domNode = P('Drawings can be saved using the ', Save, ' button towards the top-left corner of the app.');
+  let keyBinding = BoldSpan(detectMacOS() ? 'Command+S' : 'Ctrl+S');
+
+  let domNode = P('Drawings can be saved using the ', Save, ' button towards the top-left corner of the app or by pressing ', keyBinding, '.');
 
   domNode.style.marginTop = '50px';
 
