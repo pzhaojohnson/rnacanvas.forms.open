@@ -3,8 +3,8 @@
   top: 68px;
   left: 86px;
 
-  width: 386px;
-  height: 441px;
+  width: 393px;
+  height: 488px;
 
   border-radius: 12px;
 
@@ -12,7 +12,7 @@
 
   padding: 28px 32px 50px 32px;
 
-  background-color: #d6d6ff4a;
+  background-color: #e2e2ff61;
 
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -37,7 +37,7 @@
 }
 
 .content-container {
-  margin: 37px 0px 0px 22px;
+  margin: 38px 0px 0px 22px;
 
   display: flex;
   flex-direction: column;
