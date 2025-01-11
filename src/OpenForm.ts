@@ -90,15 +90,17 @@ function BoldSpan(textContent: string) {
 function HowToOpen() {
   let dragNDrop = BoldSpan("Drag-n'-drop");
 
+  let copyAndPaste = BoldSpan('copy-and-paste');
+
   let dotRNAcanvas = BoldSpan('.rnacanvas');
 
-  return P(dragNDrop, ' a saved drawing file (with ', dotRNAcanvas, ' extension) anywhere in the app to open it.');
+  return P(dragNDrop, ' or ', copyAndPaste, ' a saved drawing file (with ', dotRNAcanvas, ' extension) anywhere in the app to open it.');
 }
 
 function ErrorMessagesLocation() {
   let domNode = P('Any error messages (e.g., for invalid drawing files) will appear in the web browser console.');
 
-  domNode.style.marginTop = '49px';
+  domNode.style.marginTop = '50px';
 
   return domNode;
 }
@@ -122,7 +124,7 @@ function HowToSave() {
 
   let domNode = P('Drawings can be saved using the ', Save, ' button towards the top-left corner of the app or by pressing ', keyBinding, '.');
 
-  domNode.style.marginTop = '53px';
+  domNode.style.marginTop = '56px';
 
   return domNode;
 }

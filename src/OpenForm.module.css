@@ -3,8 +3,8 @@
   top: 68px;
   left: 86px;
 
-  width: 393px;
-  height: 488px;
+  width: 397px;
+  height: 494px;
 
   border-radius: 12px;
 
@@ -37,7 +37,7 @@
 }
 
 .content-container {
-  margin: 38px 0px 0px 22px;
+  margin: 41px 0px 0px 22px;
 
   display: flex;
   flex-direction: column;
