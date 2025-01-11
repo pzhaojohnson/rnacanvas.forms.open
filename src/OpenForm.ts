@@ -28,6 +28,8 @@ export class OpenForm {
 
     contentContainer.append(HowToSave());
 
+    contentContainer.append(DefaultSavedDrawingFilesLocation());
+
     let closeButton = CloseButton();
     closeButton.addEventListener('click', () => this.close());
     this.domNode.append(closeButton);
@@ -100,7 +102,7 @@ function HowToOpen() {
 function ErrorMessagesLocation() {
   let domNode = P('Any error messages (e.g., for invalid drawing files) will appear in the web browser console.');
 
-  domNode.style.marginTop = '50px';
+  domNode.style.marginTop = '51px';
 
   return domNode;
 }
@@ -124,7 +126,17 @@ function HowToSave() {
 
   let domNode = P('Drawings can be saved using the ', Save, ' button towards the top-left corner of the app or by pressing ', keyBinding, '.');
 
-  domNode.style.marginTop = '56px';
+  domNode.style.marginTop = '66px';
+
+  return domNode;
+}
+
+function DefaultSavedDrawingFilesLocation() {
+  let Downloads = BoldSpan('Downloads');
+
+  let domNode = P('Saved drawing files will be downloaded to your ', Downloads, ' folder by default (unless this setting has been changed for your web browser.');
+
+  domNode.style.marginTop = '33px';
 
   return domNode;
 }
