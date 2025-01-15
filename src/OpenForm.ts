@@ -102,7 +102,7 @@ function HowToOpen() {
 function ErrorMessagesLocation() {
   let domNode = P('Any error messages (e.g., for invalid drawing files) will appear in the web browser console.');
 
-  domNode.style.marginTop = '51px';
+  domNode.style.marginTop = '53px';
 
   return domNode;
 }
@@ -136,7 +136,7 @@ function DefaultSavedDrawingFilesLocation() {
 
   let domNode = P('Saved drawing files will be downloaded to your ', Downloads, ' folder by default (unless this setting has been changed for your web browser.');
 
-  domNode.style.marginTop = '33px';
+  domNode.style.marginTop = '37px';
 
   return domNode;
 }
