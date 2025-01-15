@@ -134,7 +134,7 @@ function HowToSave() {
 function DefaultSavedDrawingFilesLocation() {
   let Downloads = BoldSpan('Downloads');
 
-  let domNode = P('Saved drawing files will be downloaded to your ', Downloads, " folder by default (unless you've changed this setting in your web browser.");
+  let domNode = P('Saved drawing files will be downloaded to your ', Downloads, " folder by default (unless you've changed this setting in your web browser).");
 
   domNode.style.marginTop = '37px';
 
