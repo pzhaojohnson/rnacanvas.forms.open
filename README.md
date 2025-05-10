@@ -12,6 +12,9 @@ npm install @rnacanvas/forms.open
 
 The Open form component.
 
+The Open form primarily serves to inform the user
+about how to open and save drawings in the RNAcanvas web app.
+
 ```javascript
 // can be imported as a named import
 import { OpenForm } from '@rnacanvas/forms.open';
