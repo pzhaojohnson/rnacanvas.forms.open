@@ -3,16 +3,16 @@
   top: 68px;
   left: 86px;
 
-  width: 402px;
+  width: 403px;
   height: 507px;
 
-  border-radius: 12px;
+  border-radius: 11px;
 
   border: 1px solid #220536;
 
-  padding: 29px 33px 50px 32px;
+  padding: 29px 35px 50px 32px;
 
-  background-color: #f4f5ff;
+  background-color: rgba(227, 229, 255, 0.37);
 
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -25,7 +25,7 @@
   padding: 0px;
 
   font-family: "Open Sans", sans-serif;
-  font-size: 26px;
+  font-size: 25px;
   font-weight: 700;
   font-style: normal;
   color: black;
@@ -37,7 +37,7 @@
 }
 
 .content-container {
-  margin: 42px 0px 0px 23px;
+  margin: 43px 0px 0px 24px;
 
   display: flex;
   flex-direction: column;

@@ -124,9 +124,9 @@ function HowToSave() {
 
   let keyBinding = BoldSpan(detectMacOS() ? 'Command+S' : 'Ctrl+S');
 
-  let domNode = P('Drawings can be saved using the ', Save, ' button towards the top-left corner of the app or by pressing ', keyBinding, '.');
+  let domNode = P('Drawings can be saved by pressing the ', Save, ' button towards the top-left corner of the app or by pressing ', keyBinding, '.');
 
-  domNode.style.marginTop = '66px';
+  domNode.style.marginTop = '65px';
 
   return domNode;
 }
@@ -136,7 +136,7 @@ function DefaultSavedDrawingFilesLocation() {
 
   let domNode = P('Saved drawing files will be downloaded to your ', Downloads, " folder by default (unless you've changed this setting in your web browser).");
 
-  domNode.style.marginTop = '37px';
+  domNode.style.marginTop = '41px';
 
   return domNode;
 }
