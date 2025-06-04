@@ -3,21 +3,16 @@
   top: 68px;
   left: 86px;
 
-  width: 403px;
-  height: 507px;
+  width: 407px;
+  height: 509px;
 
-  border-radius: 11px;
+  border-radius: 10px;
 
-  border: 1px solid #220536;
+  border: 1px solid #cacae4;
 
-  padding: 29px 35px 50px 32px;
+  padding: 28px 34px 50px 32px;
 
-  background-color: rgba(227, 229, 255, 0.37);
-
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-
-  box-shadow: 0 0 14px rgba(219, 219, 238, 0.09);
+  background-color: black;
 }
 
 .title {
@@ -25,10 +20,10 @@
   padding: 0px;
 
   font-family: "Open Sans", sans-serif;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 700;
   font-style: normal;
-  color: black;
+  color: white;
 
   user-select: none;
   -webkit-user-select: none;
@@ -52,9 +47,9 @@
 
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
-  color: black;
+  color: white;
 
   user-select: none;
   -webkit-user-select: none;
@@ -77,7 +72,7 @@
   font-size: 16px;
   font-weight: 600;
   font-style: normal;
-  color: #871414;
+  color: #e0e066;
 
   pointer-events: auto;
 
@@ -90,9 +85,9 @@
 }
 
 .close-button:hover {
-  background-color: #cab8d99c;
+  background-color: #34342e;
 }
 
 .close-button:active {
-  background-color: #aa8eba9e;
+  background-color: #45453e;
 }

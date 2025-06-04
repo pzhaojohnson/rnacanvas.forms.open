@@ -89,10 +89,18 @@ function BoldSpan(textContent: string) {
   return domNode;
 }
 
-function HowToOpen() {
-  let dragNDrop = BoldSpan("Drag-n'-drop");
+function CyanBoldSpan(textContent: string) {
+  let domNode = BoldSpan(textContent);
 
-  let copyAndPaste = BoldSpan('copy-and-paste');
+  domNode.style.color = '#5fffff';
+
+  return domNode;
+}
+
+function HowToOpen() {
+  let dragNDrop = CyanBoldSpan("Drag-n'-drop");
+
+  let copyAndPaste = CyanBoldSpan('copy-and-paste');
 
   let dotRNAcanvas = BoldSpan('.rnacanvas');
 
@@ -102,15 +110,15 @@ function HowToOpen() {
 function ErrorMessagesLocation() {
   let domNode = P('Any error messages (e.g., for invalid drawing files) will appear in the web browser console.');
 
-  domNode.style.marginTop = '53px';
+  domNode.style.marginTop = '54px';
 
   return domNode;
 }
 
 function HowToOpenConsole() {
-  let keyBinding = BoldSpan(detectMacOS() ? 'Option+Command+I' : 'Ctrl+Shift+I');
+  let keyBinding = CyanBoldSpan(detectMacOS() ? 'Option+Command+I' : 'Ctrl+Shift+I');
 
-  let Console = BoldSpan('Console');
+  let Console = CyanBoldSpan('Console');
 
   let domNode = P('The web browser console can be opened by pressing ', keyBinding, ' and selecting the ', Console, ' tab.');
 
@@ -120,9 +128,9 @@ function HowToOpenConsole() {
 }
 
 function HowToSave() {
-  let Save = BoldSpan('Save');
+  let Save = CyanBoldSpan('Save');
 
-  let keyBinding = BoldSpan(detectMacOS() ? 'Command+S' : 'Ctrl+S');
+  let keyBinding = CyanBoldSpan(detectMacOS() ? 'Command+S' : 'Ctrl+S');
 
   let domNode = P('Drawings can be saved by pressing the ', Save, ' button towards the top-left corner of the app or by pressing ', keyBinding, '.');
 
@@ -136,7 +144,7 @@ function DefaultSavedDrawingFilesLocation() {
 
   let domNode = P('Saved drawing files will be downloaded to your ', Downloads, " folder by default (unless you've changed this setting in your web browser).");
 
-  domNode.style.marginTop = '41px';
+  domNode.style.marginTop = '46px';
 
   return domNode;
 }
