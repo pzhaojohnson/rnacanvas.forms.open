@@ -46,6 +46,13 @@ export class OpenForm {
 
     container.appendChild(this.domNode);
   }
+
+  /**
+   * Undoes any dragging of the Open form by the user.
+   */
+  reposition(): void {
+    this.#dragTranslater.untranslate();
+  }
 }
 
 function Title() {
