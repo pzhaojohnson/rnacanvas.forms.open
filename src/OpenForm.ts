@@ -1,6 +1,6 @@
 import * as styles from './OpenForm.module.css';
 
-import { DragTranslater } from '@rnacanvas/forms';
+import { DragHandler } from '@rnacanvas/forms';
 
 import { detectMacOS } from '@rnacanvas/utilities';
 
@@ -10,7 +10,7 @@ import { detectMacOS } from '@rnacanvas/utilities';
 export class OpenForm {
   readonly domNode = document.createElement('div');
 
-  #dragTranslater;
+  #dragHandler;
 
   constructor() {
     this.domNode.classList.add(styles['open-form']);
@@ -24,8 +24,6 @@ export class OpenForm {
 
     contentContainer.append(ErrorMessagesLocation());
 
-    contentContainer.append(HowToOpenConsole());
-
     contentContainer.append(HowToSave());
 
     contentContainer.append(DefaultSavedDrawingFilesLocation());
@@ -34,7 +32,7 @@ export class OpenForm {
     closeButton.addEventListener('click', () => this.close());
     this.domNode.append(closeButton);
 
-    this.#dragTranslater = new DragTranslater(this.domNode);
+    this.#dragHandler = new DragHandler(this.domNode);
   }
 
   close() {
@@ -42,7 +40,7 @@ export class OpenForm {
   }
 
   appendTo(container: Node): void {
-    this.#dragTranslater.untranslate();
+    this.reposition();
 
     container.appendChild(this.domNode);
   }
@@ -51,7 +49,7 @@ export class OpenForm {
    * Undoes any dragging of the Open form by the user.
    */
   reposition(): void {
-    this.#dragTranslater.untranslate();
+    this.#dragHandler.untranslate();
   }
 }
 
@@ -115,21 +113,15 @@ function HowToOpen() {
 }
 
 function ErrorMessagesLocation() {
-  let domNode = P('Any error messages (e.g., for invalid drawing files) will appear in the web browser console.');
+  let errorMessages = CyanBoldSpan('error messages');
+
+  let keyBinding = BoldSpan(detectMacOS() ? 'Option+Command+I' : 'Ctrl+Shift+I');
+
+  let Console = BoldSpan('Console');
+
+  let domNode = P('Any ', errorMessages, ' (e.g., for invalid drawing files) will appear in the web browser console (press ', keyBinding, ' and go to the ', Console, ' tab to open).');
 
   domNode.style.marginTop = '54px';
-
-  return domNode;
-}
-
-function HowToOpenConsole() {
-  let keyBinding = CyanBoldSpan(detectMacOS() ? 'Option+Command+I' : 'Ctrl+Shift+I');
-
-  let Console = CyanBoldSpan('Console');
-
-  let domNode = P('The web browser console can be opened by pressing ', keyBinding, ' and selecting the ', Console, ' tab.');
-
-  domNode.style.margin = '20px 0px 0px 27px';
 
   return domNode;
 }
@@ -137,11 +129,11 @@ function HowToOpenConsole() {
 function HowToSave() {
   let Save = CyanBoldSpan('Save');
 
-  let keyBinding = CyanBoldSpan(detectMacOS() ? 'Command+S' : 'Ctrl+S');
+  let keyBinding = BoldSpan(detectMacOS() ? 'Command+S' : 'Ctrl+S');
 
   let domNode = P('Drawings can be saved by pressing the ', Save, ' button towards the top-left corner of the app or by pressing ', keyBinding, '.');
 
-  domNode.style.marginTop = '65px';
+  domNode.style.marginTop = '66px';
 
   return domNode;
 }
@@ -151,7 +143,7 @@ function DefaultSavedDrawingFilesLocation() {
 
   let domNode = P('Saved drawing files will be downloaded to your ', Downloads, " folder by default (unless you've changed this setting in your web browser).");
 
-  domNode.style.marginTop = '46px';
+  domNode.style.marginTop = '48px';
 
   return domNode;
 }
